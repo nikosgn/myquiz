@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	<definition name="common" template="/WEB-INF/layout/classic.jsp">
+		<put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+	</definition>
+
+	<definition name="index" extends="common">
+		<put-attribute name="title" value="MyQuiz" />
+		<put-attribute name="body" value="/WEB-INF/jsp/index.jsp" />
+		<put-attribute name="current" value="index" />
+	</definition>
+
+	<definition name="users" extends="common">
+		<put-attribute name="title" value="MyQuiz Users" />
+		<put-attribute name="body" value="/WEB-INF/jsp/users.jsp" />
+		<put-attribute name="current" value="users" />
+	</definition>
+
+	<definition name="user-detail" extends="common">
+		<put-attribute name="title" value="MyQuiz User details" />
+		<put-attribute name="body" value="/WEB-INF/jsp/user-detail.jsp" />
+		<put-attribute name="current" value="users" />
+	</definition>
+
+	<definition name="categories" extends="common">
+		<put-attribute name="title" value="MyQuiz Categories" />
+		<put-attribute name="body" value="/WEB-INF/jsp/categories.jsp" />
+		<put-attribute name="current" value="categories" />
+	</definition>
+
+	<definition name="questions" extends="common">
+		<put-attribute name="title" value="MyQuiz questions" />
+		<put-attribute name="body" value="/WEB-INF/jsp/questions.jsp" />
+		<put-attribute name="current" value="questions" />
+	</definition>
+
+	<definition name="questionsfull" extends="common">
+		<put-attribute name="title" value="MyQuiz- Questions test" />
+		<put-attribute name="body" value="/WEB-INF/jsp/questionsfull.jsp" />
+		<put-attribute name="current" value="questionsfull" />
+	</definition>
+
+	<definition name="showquestions" extends="common">
+		<put-attribute name="title" value="MyQuiz- Questions test" />
+		<put-attribute name="body" value="/WEB-INF/jsp/showquestions.jsp" />
+		<put-attribute name="current" value="showquestions" />
+	</definition>
+
+	<definition name="user-register" extends="common">
+		<put-attribute name="title" value="MyQuiz- Registration" />
+		<put-attribute name="body" value="/WEB-INF/jsp/user-register.jsp" />
+		<put-attribute name="current" value="register" />
+	</definition>
+
+
+</tiles-definitions>
